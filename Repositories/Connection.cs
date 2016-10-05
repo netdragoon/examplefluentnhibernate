@@ -4,6 +4,8 @@ using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using Repositories.Interfaces;
 using System.Collections.Generic;
+using System;
+using System.Collections;
 
 namespace Repositories
 {
@@ -81,7 +83,13 @@ namespace Repositories
             session.Close();
             sessionFactory.Close();
             session.Dispose();
-            sessionFactory.Dispose();
+            sessionFactory.Dispose();          
+            
+        }
+
+        public IList SqlQuery(string sql)
+        {
+            return session.CreateSQLQuery(sql).List();
         }
     }
 }

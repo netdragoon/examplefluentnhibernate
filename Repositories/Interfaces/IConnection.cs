@@ -1,5 +1,6 @@
 ﻿using NHibernate;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 namespace Repositories.Interfaces
 {
@@ -12,5 +13,6 @@ namespace Repositories.Interfaces
         IList<T> ToList<T>() where T : class;
         ISession Session();
         ISessionFactory SessionFactory();
+        IList SqlQuery(string sql);
     }
 }

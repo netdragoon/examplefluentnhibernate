@@ -1,5 +1,4 @@
 ﻿using NHibernate;
-using System.Collections.Generic;
 
 namespace Repositories.Interfaces
 {
@@ -11,6 +10,7 @@ namespace Repositories.Interfaces
         T Edit(T model);
         T Find(object id);
         T Find(object id, LockMode lockMode);
-        IList<T> ToList();
+        System.Collections.Generic.IList<T> ToList();
+        System.Collections.IList SqlQuery(string sql);
     }
 }

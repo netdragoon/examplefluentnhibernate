@@ -1,6 +1,8 @@
 ﻿using NHibernate;
 using Repositories.Interfaces;
 using System.Collections.Generic;
+using System;
+using System.Collections;
 
 namespace Repositories.Abstract
 {
@@ -38,6 +40,11 @@ namespace Repositories.Abstract
         public IList<T> ToList()
         {
             return Connection.ToList<T>();
+        }
+
+        public IList SqlQuery(string sql)
+        {
+            return Connection.SqlQuery(sql);
         }
     }
 }
