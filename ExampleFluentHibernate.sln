@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositorie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CslAppTest", "CslAppTest\CslAppTest.csproj", "{0A20F132-26A1-45D6-9383-CE5777D3356D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{306738D5-FE61-4CDF-BDFB-920E0EF23DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0A20F132-26A1-45D6-9383-CE5777D3356D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A20F132-26A1-45D6-9383-CE5777D3356D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A20F132-26A1-45D6-9383-CE5777D3356D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306738D5-FE61-4CDF-BDFB-920E0EF23DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306738D5-FE61-4CDF-BDFB-920E0EF23DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306738D5-FE61-4CDF-BDFB-920E0EF23DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306738D5-FE61-4CDF-BDFB-920E0EF23DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

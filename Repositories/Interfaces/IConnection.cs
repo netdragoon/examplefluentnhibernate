@@ -14,5 +14,6 @@ namespace Repositories.Interfaces
         ISession Session();
         ISessionFactory SessionFactory();
         IList SqlQuery(string sql);
+        IQuery Query(string sql);
     }
 }

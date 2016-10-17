@@ -59,6 +59,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryItens.cs" />
     <Compile Include="RepositoryItensImplementation.cs" />
+    <Compile Include="RepositoryUsuario.cs" />
+    <Compile Include="RepositoryUsuarioImplementation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

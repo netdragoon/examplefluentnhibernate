@@ -46,5 +46,15 @@ namespace Repositories.Abstract
         {
             return Connection.SqlQuery(sql);
         }
+
+        public T First(string sql, IDictionary<string, object> parameters)
+        {
+            var q = Connection.Query(sql);
+            foreach(var p in parameters)
+            {
+                q = q.SetParameter(p.Key, p.Value);
+            }   
+            return q.UniqueResult<T>();
+        }
     }
 }

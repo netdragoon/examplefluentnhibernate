@@ -89,7 +89,12 @@ namespace Repositories
 
         public IList SqlQuery(string sql)
         {
-            return session.CreateSQLQuery(sql).List();
+            return session.CreateSQLQuery(sql).List();            
+        }
+
+        public IQuery Query(string sql)
+        {
+            return session.CreateQuery(sql);
         }
     }
 }

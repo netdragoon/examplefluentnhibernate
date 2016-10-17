@@ -15,6 +15,7 @@ namespace CslAppTest
         {
             IConnection Connection = new Connection();
             var itens = Connection.SqlQuery("select id, nome FROM Itens");
+            
         }
     }
 }
